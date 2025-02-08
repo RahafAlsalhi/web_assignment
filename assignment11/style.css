@@ -1,0 +1,18 @@
+#home{
+    background-image:url(htu.jpg) ;
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 150vh;
+    width: 100vh;
+}
+#about{
+    background-image:url(htu.jpg) ;
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 150vh;
+    width: 100vh;
+}
