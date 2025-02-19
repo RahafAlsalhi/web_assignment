@@ -46,26 +46,45 @@
 .flex2 {
   flex: 2;
 }
-.rows {
-  background-color: rgb(15, 15, 15);
-  padding: 15px;
+.channel-row {
   display: flex;
-  flex-direction: column;
+  margin: 1px;
+}
+.channel-info {
+  width: 80px;
+  background-color: #2a2a2a;
+  margin-right: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.channel-info img {
+  max-width: 60px;
+  max-height: 60px;
+}
+.channel-programs {
+  display: flex;
+  background-color: rgb(15, 15, 15);
+  border-radius: 5px;
+  width: 100vw;
   gap: 10px;
 }
-.channels-row {
-  margin: 10px;
-  border: none;
-  border-radius: 7px;
-  color: white;
+.program {
+  background-color: #333;
+  margin: 1px;
+  padding: 1px;
+  border-radius: 5px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
-.channels-row img {
-  border: none;
-  border-radius: 7px;
-  width: 50px;
-  height: 60px;
-  padding-right: 6px;
+.program-title {
+  font-weight: bold;
+  margin-bottom: 1px;
+  color: white;
+}
+
+.program-time {
+  color: white;
 }
