@@ -83,6 +83,7 @@ body {
 .bottom {
   display: flex;
   gap: 150px;
+  justify-content: space-between;
 }
 
 .message-count {
