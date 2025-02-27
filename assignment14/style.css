@@ -3,52 +3,115 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header {
+
+header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
+
 .search-bar {
   display: flex;
-  border: 1px solid black;
-  border-radius: 8px;
+  justify-content: center;
+  gap: 10px;
   align-items: center;
 }
-.button {
+
+.search-bar input {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 400px;
+  height: 30px;
+}
+
+.search-bar img {
+  width: 50px;
+  height: 30px;
+}
+
+.create {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.create button {
   border: 1px solid #0c0101;
   border-radius: 20px;
   width: 10vh;
   height: 5vh;
 }
+
+.create .img1 {
+  width: 40px;
+  height: 30px;
+}
+
+.create .img2 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+main {
+  height: 90vh;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: none;
+  max-width: 70px;
+  margin-top: 10px;
+}
+
+.side-bar a {
+  text-decoration: none;
+  color: #0c0101;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 .parent {
   min-height: 100vh;
   display: flex;
-  gap: 10px;
-}
-.flex {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  max-width: 1000px;
-  border: 1px solid red;
+  width: 100%;
 }
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
 .items {
   height: 100px;
   background-color: aqua;
   border: 1px solid black;
   flex: 1 1 250px;
-}
-.side-bar {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  border: 1px solid red;
-  flex-wrap: wrap;
-  justify-content: first baseline;
-  flex: 1;
-  max-width: 200px;
+  min-width: 250px;
 }
