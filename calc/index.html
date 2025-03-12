@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calc</title>
+  </head>
+  <body>
+    <div class="calc">
+      <div>
+        <input type="number" id="num1" />
+        <select id="operation">
+          <option value="add">+</option>
+          <option value="subtract">-</option>
+          <option value="multiply">*</option>
+          <option value="divide">/</option>
+        </select>
+        <input type="number" id="num2" />
+        <button type="button" onclick="calculate()">=</button>
+        <input type="text" readonly id="result" />
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
