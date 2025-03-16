@@ -13,7 +13,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 .p1 {
@@ -92,6 +91,7 @@ a {
   padding: 30px;
   color: white;
 }
+
 .article-card {
   display: flex;
   align-items: center;
@@ -190,7 +190,6 @@ a {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  flex-shrink: 0;
 }
 .card-body {
   position: absolute;
@@ -203,4 +202,13 @@ a {
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+}
+.social {
+  margin-top: 80px;
+}
+.social h6 {
+  color: grey;
+}
+.icon2 {
+  gap: 10px;
 }
