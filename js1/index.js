@@ -45,3 +45,12 @@ console.log(title1.concat(title2));
 
 let word1="javascript world";
 console.log(word1.indexOf('w'));
+
+function factorial (num){
+    let fact=1;
+    for(let i =1 ; i<=num;i++){
+  fact*=i;
+    }
+    return fact;
+}
+console.log(factorial(4));
