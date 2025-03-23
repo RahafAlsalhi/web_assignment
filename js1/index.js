@@ -54,3 +54,49 @@ function factorial (num){
     return fact;
 }
 console.log(factorial(4));
+
+let arr1=[1,2,3,4,5];
+let result=arr1.map(x => x*3);
+console.log(result);
+
+
+let arr11=[1,1,2,2,3,3];
+let result1=arr11.filter((value,index,arr)=> arr.indexOf(value)===index);
+console.log(result1);
+
+
+let arr12=[{age:40},{age:30},{age:50}];
+arr12.sort((a, b) => a.age - b.age);
+console.log(arr12);
+
+
+let arr = [1, 5, 9, 6, 3, 87, 72, 23];
+let largestNumber = arr => arr.reduce((max, current) => current > max ? current : max, arr[0]);
+console.log(largestNumber(arr));
+
+let arr2 = [1, 5, 9];
+let reverseArray = arr => {
+  let reversed = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+  return reversed;
+};
+
+console.log(reverseArray(arr2));
+  
+
+let arr3 = [1, 5, 9, 6, 23, 87, 72, 3];
+let target = 9;
+let sum = (arr3, target) => {
+  for (let i = 0; i < arr3.length; i++) {
+    for (let j = i + 1; j < arr3.length; j++) {
+      if (arr3[i] + arr3[j] === target) {
+        return [arr3[i], arr3[j]]; 
+      }
+    }
+  }
+};
+console.log(sum(arr, target));
+
+
