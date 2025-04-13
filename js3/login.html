@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return Validate()">
+      <label for="username">User Name</label>
+      <input id="username" type="text" /><br /><br />
+      <p id="errormessage1"></p>
+      <label for="email">User Email</label>
+      <input id="email" type="email" /><br /><br />
+      <p id="errormessage2"></p>
+      <label for="password">Password</label>
+      <input id="password" type="password" /><br /><br />
+      <p id="errormessage3"></p>
+      <label for="confirm"> confirm password</label>
+      <input id="confirm" type="password" />
+      <p id="errormessage4"></p>
+      <button type="submit">submit</button>
+    </form>
+    <script src="login.js"></script>
+  </body>
+</html>
