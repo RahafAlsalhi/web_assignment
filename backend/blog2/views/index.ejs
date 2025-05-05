@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>My Blog</h1>
+
+    <% if (posts.length === 0) { %>
+    <p>No posts yet. Add one below!</p>
+    <% } %> <% posts.forEach(post => { %>
+    <div class="post">
+      <div class="post-title"><%= post.title %></div>
+      <div class="post-content"><%= post.content %></div>
+      <div class="post-meta">By <%= post.author %> on <%= post.date %></div>
+    </div>
+    <% }) %>
+
+    <hr />
+
+    <h2>Add a New Post</h2>
+    <form method="POST" action="/post">
+      <input
+        type="text"
+        name="title"
+        placeholder="Title"
+        required
+      /><br /><br />
+      <textarea
+        name="content"
+        placeholder="Content"
+        rows="5"
+        required
+      ></textarea
+      ><br /><br />
+      <input
+        type="text"
+        name="author"
+        placeholder="Author"
+        required
+      /><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
