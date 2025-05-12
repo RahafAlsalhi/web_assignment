@@ -1,16 +1,16 @@
 import express from "express";
 import bodyParser from "body-parser";
-import { error } from "console";
 
 const app = express();
 const port = 4000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 let posts = [];
 let lastId = 0;
 
-app.get("/", (req, res) => {
+app.get("/posts", (req, res) => {
   res.json(posts);
 });
 
@@ -20,7 +20,7 @@ app.get("/posts/:id", (req, res) => {
   else res.status(404).json({ error: "Post not found" });
 });
 
-app.post("/post", (req, res) => {
+app.post("/posts", (req, res) => {
   lastId++;
   const post = {
     id: lastId,
@@ -33,7 +33,7 @@ app.post("/post", (req, res) => {
   res.status(200).json(post);
 });
 
-app.patch("/post/:id", (req, res) => {
+app.patch("/posts/:id", (req, res) => {
   const postIndex = posts.findIndex((p) => p.id === parseInt(req.params.id));
   if (postIndex === -1)
     return res.status(404).json({ error: "Post not found" });
@@ -49,13 +49,14 @@ app.patch("/post/:id", (req, res) => {
   posts[postIndex] = updated;
   res.status(200).json(updated);
 });
-app.delete("/post/:id", (req, res) => {
+
+app.delete("/posts/:id", (req, res) => {
   const postIndex = posts.findIndex((p) => p.id === parseInt(req.params.id));
   if (postIndex === -1) {
     return res.status(404).json({ error: "Post not found" });
   }
 
-  const deletedPost = posts.splice(postIndex, 1)[0];
+  const deletedPost = posts.splice(postIndex, 1);
   res.status(200).json({ message: "Post deleted", post: deletedPost });
 });
 
