@@ -92,12 +92,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex: 1;
 }
 
 .top,
 .bottom {
   display: flex;
-  gap: 150px;
   justify-content: space-between;
 }
 

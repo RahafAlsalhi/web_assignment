@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+      }
+      .parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        min-height: 100%;
+      }
+      .container {
+        border: 1px solid black;
+        max-width: 1024px;
+        flex: 1;
+        min-height: 70vh;
+        flex-wrap: wrap;
+        display: flex;
+      }
+      .settings {
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        flex-basis: 60px;
+      }
+
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .chat-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        min-width: 250px;
+        max-width: 450px;
+        background-color: red;
+        padding: 4px 6px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .search {
+        display: flex;
+        gap: 4px;
+      }
+      input {
+        flex: 1;
+      }
+      .list {
+        background-color: yellow;
+        flex: 1;
+        overflow: auto;
+        gap: 6px;
+        min-height: 50vh;
+        max-height: calc(100vh - 306px);
+      }
+      .card {
+        display: flex;
+      }
+      .img {
+        background-color: aqua;
+        width: 46px;
+        height: 46px;
+      }
+      .info {
+        flex: 1;
+      }
+      .chat-box {
+        flex: 1;
+        justify-content: space-between;
+      }
+      .messages-box {
+        background-color: blue;
+        min-height: 40vh;
+        flex: 1;
+      }
+      .chat-actions {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="container">
+        <div class="settings flex-column">
+          <div class="flex-column">
+            <a>home</a>
+            <a>home</a>
+          </div>
+          <div class="flex-column">
+            <a>sign-out</a>
+            <a>sign-out</a>
+          </div>
+        </div>
+        <div class="chat-list">
+          <div class="header">
+            <a>Chat</a>
+
+            <div>
+              <a>filter</a>
+              <a>call</a>
+            </div>
+          </div>
+          <div class="search">
+            search
+            <input type="text" />
+          </div>
+          <div class="list flex-column">
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkjak</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info flex-column">
+                <a>Name</a>
+                <p>asjdh asdhkas hdkjahsdkjha sdkja</p>
+              </div>
+              <div class="time flex-column">
+                <a> 9:00 am</a>
+                <a> P</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-box flex-column">
+          <div class="chat-header header"><a>name </a>search</div>
+          <div class="messages-box"></div>
+          <div class="chat-actions">
+            <input type="text" />
+            <button>send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="abs"></div>
+  </body>
+</html>
