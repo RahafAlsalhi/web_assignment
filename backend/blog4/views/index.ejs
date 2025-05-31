@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="/styles/style2.css" />
+  </head>
+  <body>
+    <h1>My Blog</h1>
+    <a class="create" href="/create-post">Create post</a>
+
+    <% if (posts.length === 0) { %>
+    <p>No posts yet. Add one above!</p>
+    <% } %> <% posts.forEach(post => { %>
+    <div class="post">
+      <div class="post-title"><%= post.title %></div>
+      <div class="post-content"><%= post.content %></div>
+      <div class="post-meta">
+        By <%= post.author %> on <%= new Date(post.date).toLocaleDateString() %>
+      </div>
+      <div class="actions">
+        <a class="edit" href="/edit-post/<%= post.id %>">Edit</a>
+        <a class="delete" href="/api/posts/delete/<%= post.id %>">Delete</a>
+      </div>
+    </div>
+    <% }) %>
+  </body>
+</html>
