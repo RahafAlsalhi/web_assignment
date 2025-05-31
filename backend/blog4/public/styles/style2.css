@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin-top: 40px;
+  font-size: 2.5em;
+}
+
+a.create {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+a.create:hover {
+  background-color: #45a049;
+}
+
+.post {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 900px;
+}
+
+.post-title {
+  font-size: 1.8em;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions a {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1.1em;
+}
+
+.actions a.edit {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.actions a.edit:hover {
+  background-color: #ec971f;
+}
+
+.actions a.delete {
+  background-color: #d9534f;
+  color: white;
+}
+
+.actions a.delete:hover {
+  background-color: #c9302c;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #777;
+  padding: 20px;
+}
